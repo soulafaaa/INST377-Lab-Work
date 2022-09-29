@@ -3,7 +3,7 @@
 <html lang = "en">
   <head>
     <title>Interneting Is Easy!</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class = "wrapper">
@@ -13,34 +13,41 @@
     <div class = "left_section box">
         <!-- left side of the pagge-->
         <h2>Album Names</h2>
+        <div class="box">
             <ol>
                 <li> Both of them (EP) - Iniko</li>
                 <li> YSRA - Facesoul</li>
                 <li> Chrysalis - Poet22</li>
                 <li> The jungle Is The Only Way Out - Mereba </li>
                 <li> 30 - Adele</li>
-                </ol>
+            </ol>
+        </div>
    </div>
    <div class = "right_section box">
     <!-- right side of the pagge-->
         <h2>Image Carousel</h2>
-        <div class = "grid">
-            <img src='./images/Rihanna #1.png' alt="rihanna"/>
-            <img src='./images/rihanna#2.jpeg' alt="rihanna"/>
-            <img src='./images/rihanna#3.jpeg' alt="rihanna"/>
-            <img src='./images/rihanna#4.png' alt="rihanna"/>
-        </div>
-
-        <div class = "subtitle box"> 
-            Four images of a mochi in a bubble or a ball.<br> 
-            These images are all in different formats. 
-        </div>
+        <div class="carousel">
+            <button class="prev">prev</button>
+              <div class="slides">
+                <div class="carousel_item visible"><img id="slide_1"  src='./images/closeup copy.jpg' alt="close up" /></div>
+                <div class="carousel_item hidden"><img id = "slide_2" src="images/diamond-ball.jpg"  alt= "diamond-ball" /></div>
+                <div class="carousel_item hidden"><img id = "slide_3" src='images/met_galla_rih.jpg' alt="met_galla_rih" /></div>
+                <div class="carousel_item hidden"><img id = "slide_4" src='images/ulta_rihanna.jpg' alt="ulta_rihanna"/></div>
+            </div>
+            <button class="next"> next</button> </div>
+        <div class = "box header"> 
+            Four images of Rihanna.  </div>
+       
     </div>
     </div>
-    </div>
+      <!--image box -->
+</div>
+</div>
+</div>
     <footer class ="footer"> 
-        <p>Github username: Soulafaaa <a href= "https://github.com/soulafaaa">Click for account</a></p>
+        Github username: Soulafaaa <a href= "https://github.com/soulafaaa">Click for account</a>
     </footer>
+</div>
     <script src="script.js"></script>
   </body>
 </html>
