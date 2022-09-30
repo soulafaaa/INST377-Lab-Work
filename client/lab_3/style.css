@@ -256,10 +256,13 @@ div.carousel {
 .prev:focus,
 .next:focus {
   margin: 0;
+  border-color:rgba(0, 81, 20, 0.8);
+ 
   /* Pick a good border colour and check out how it works with your buttons */
 }
 
 .prev:hover,
 .next:hover {
+  background-color:hsl(27, 95%, 46%);
   /* Pick a good background colour for your hover pseudoclass */
 }
