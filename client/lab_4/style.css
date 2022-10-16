@@ -80,7 +80,9 @@ form {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1.5rem;
+  width: 100%
 }
+
 
 /*
   This rule implies that the H1 tag lives within another HTML tag
@@ -125,6 +127,7 @@ form {
   margin: 0 auto;
 }
 
+
 .left_section {
   background-color: rgba(163, 163, 173, 0.357);
   flex: 0 1 auto;
@@ -147,11 +150,6 @@ form {
 }
 
 
-/*
-  This block is actually dependent on the "container" block having a flex set on it
-  and the "wrapper" block displaying as a flex column with a "vertical height" (vh) of 100.
-  That serves to cram the footer to the bottom of the page.
-*/
 
 .footer {
   flex-shrink: 0;
@@ -186,93 +184,6 @@ form {
 }
 
 
-/* Deploy this with images as direct "children" and the images should pop into shape */
-.grid {
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: wrap;
-  width: 350px;
-  height: 350px;
-  margin: 0 auto;
-}
-
-.grid img {
-  width: 150px;
-  height: 150px;
-}
-
-
-/* Carousel */
-div.carousel {
-  max-width: 300px;
-  overflow: hidden;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-}
-
-.carousel .slides {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* .carousel_item, */
-.hidden {
-  display: none;
-}
-
-.visible {
-  display: block;
-}
-
-.carousel_item img {
-  /* 
-    Setting width, rather than max-width or min-width,
-    means annoying pop-ins won't happen
-    but it also means you need to format your images to be compatible
-    or they will stretch weird
-    - try a tall one and see what happens
-    - change the height on a fixed image size and see what happens
-    - now make sure that images are _always_ square
-    - ... there's a reason crop tools are popular in image editors
-   */
-  width: 150px; 
-}
-
-.prev,
-.next {
-  border: none;
-  margin: 2px;
-  text-align: center;
-  border-radius: 5px;
-  font-weight: bold;
-  height: 45px;
-  padding: 10px;
-  line-height: 0; /* This centers a button's text! */
-  border: 2px solid rgb(99,99,99); /* shorthand for how to do a border */
-}
-
-.prev:focus,
-.next:focus {
-  margin: 0;
-  /* Pick a good border colour and check out how it works with your buttons */
-}
-
-.prev:hover,
-.next:hover {
-  /* Pick a good background colour for your hover pseudoclass */
-}
-
-/*
-Form Styles
-*/
 
 form input {
     /* This is a hack to make sure our boxes line up with one another nicely */
@@ -309,6 +220,14 @@ form input {
       align-items: center;
       justify-content: center;
 
+    }
+    .box{
+      width:100%
+    }
+    .right_section {
+      align-items: flex-start;
+      justify-content: flex-start;
+    
     }
 
     
