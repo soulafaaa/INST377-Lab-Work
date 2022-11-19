@@ -28,7 +28,7 @@ function injectHTML(list) {
     const el = document.createElement('li');
     el.innerText = item.name;
     listEL.appendChild(el);
-  })
+  });
   /*
   ## JS and HTML Injection
     There are a bunch of methods to inject text or HTML into a document using JS
@@ -49,7 +49,7 @@ function processRestaurants(list) {
   console.log('fired restaurants list');
 
   const range = [...Array(15).keys()];
-  const newArray = range.map((tem)=> {
+  const newArray = range.map((tem) => {
     const index = getRandomIntInclusive(0, list.length);
     return list[index];
   });
@@ -103,7 +103,7 @@ async function mainEvent() {
     Dot notation is preferred in JS unless you have a good reason to use brackets
     The 'data' key, which we set at line 38 in foodServiceRoutes.js, contains all 1,000 records we need
   */
-  //console.table(arrayFromJson.data);
+  // console.table(arrayFromJson.data);
 
   // in your browser console, try expanding this object to see what fields are available to work with
   // for example: arrayFromJson.data[0].name, etc
@@ -115,7 +115,7 @@ async function mainEvent() {
   // This IF statement ensures we can't do anything if we don't have information yet
   if (arrayFromJson.data?.length > 0) { // the question mark in this means "if this is set at all"
     submit.style.display = 'block'; // let's turn the submit button back on by setting it to display as a block when we have data available
-   
+
     loadAnimation.classList.remove('lds-ellipsis');
     loadAnimation.classList.add('lds-ellipsis_hidden');
 
